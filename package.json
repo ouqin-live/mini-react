@@ -4,8 +4,17 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "babel-react-jsx": "babel react-render -d react-render/dist",
+    "babel-react-component": "babel react-component -d react-component/dist"
   },
+
+  "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+
+  "devDependencies": {
+    "@babel/cli": "^7.16.8",
+    "@babel/core": "^7.16.10",
+    "@babel/preset-react": "^7.16.7"
+  }
 }
