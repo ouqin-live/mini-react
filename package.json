@@ -6,7 +6,8 @@
   "scripts": {
     "babel-react-jsx": "babel react-render -d react-render/dist",
     "babel-react-component": "babel react-component -d react-component/dist",
-    "babel-react-patch": "babel react-patch -d react-patch/dist"
+    "babel-react-patch": "babel react-patch -d react-patch/dist",
+    "babel-react-fiber": "babel react-fiber -d react-fiber/dist"
   },
 
   "keywords": [],

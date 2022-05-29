@@ -91,7 +91,7 @@ function patch(dom,vdom,parent=dom.parentNode){
     }:(el=>el)
 
     if(isComponentVdom(vdom)){
-        // component diff
+    // 一.component diff
         const props = Object.assign({},vdom.props,{children:vdom.children});
         if(dom.__instance && dom.__instance.constructor == vdom.type){
             //如果是同一个class组件，patch 子元素
@@ -112,7 +112,7 @@ function patch(dom,vdom,parent=dom.parentNode){
             return patch(dom, vdom.type(props), parent);
         }
     }else if(dom instanceof Text){
-        // 如果dom是文本节点
+    // 二.文本diff
         if(typeof vdom === 'object'){
             return replace(render(vdom, parent));
         }else{
